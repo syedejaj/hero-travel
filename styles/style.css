@@ -109,8 +109,7 @@ input,
 select {
     width: 175px;
     height: 50px;
-    padding: 0 0.5rem;
-    margin: 0 1rem;
+    margin: 0 2rem;
     border-radius: 8px;
     cursor: pointer;
     border: none;
@@ -228,4 +227,97 @@ select {
 
 .footer-section hr {
     margin: 2rem 0;
+}
+
+.ham-burger {
+    display: none;
+}
+
+/* Responsive design for mobile devices */
+@media screen and (max-width:576px) {
+    .nav-options {
+        display: none;
+    }
+
+    .ham-burger {
+        display: block;
+    }
+
+    h3,
+    .ham-burger i {
+        font-size: 26px;
+    }
+
+    .container {
+        margin: 3rem auto;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .explore-container h3 {
+        font-size: 26px;
+    }
+
+    .explore-container p {
+        width: 60%;
+    }
+
+    .travel-inputs {
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+    }
+
+    .travel-inputs input,
+    .travel-inputs select,
+    .travel-inputs button {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .popular-section {
+        grid-template-columns: 1fr;
+    }
+
+
+    .row-1,
+    .row-2,
+    .row-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Responsive for medium device */
+@media screen and (min-width:577px) and (max-width:992px) {
+    .nav-options {
+        display: none;
+    }
+
+    .ham-burger {
+        display: block;
+    }
+
+    .explore-container p {
+        width: 60%;
+    }
+
+    .travel-inputs {
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+    }
+
+
+    .travel-inputs input,
+    .travel-inputs select,
+    .travel-inputs button {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .popular-section {
+        grid-template-columns: 1fr;
+    }
 }
